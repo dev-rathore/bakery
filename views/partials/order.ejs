@@ -1,0 +1,26 @@
+<section class="status mb-5 m-auto">
+    <div>
+        <div class="status-box"> 
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h1 class="fs-2 fw-normal"> Track delivery status</h1>
+            <h6 class="bg-white py-1 rounded-pill px-4">
+                <%/*= order._id*/%>Order Id
+            </h6>
+            <input type="hidden" id="hiddenInput" 
+            value="<%/*= JSON.stringify(order)*/%>" >
+        </div>
+        <ul>
+            <li class="status_line fs-5 pb-5" data-status="order_placed">
+                <span>Order Placed</span></li>
+            <li class="status_line fs-5 pb-5" data-status="confirmed">
+                <span>Order Confirmation</span></li>
+            <li class="status_line fs-5 pb-5" data-status="prepared">
+                <span>Order Preparation</span></li>
+            <li class="status_line fs-5 pb-5" data-status="delivered">
+                <span>Out for Delivery</span></li>
+            <li class="status_line fs-5" data-status="completed">
+                <span>Completed</span></li>
+        </ul>
+        </div>
+    </div>
+</section>

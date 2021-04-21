@@ -1,0 +1,10 @@
+.my-btn{
+  color: $white;
+  background-color: $primary;
+  font-family: $btn-ff;
+  transition: all 0.3s ease;
+  &:hover{
+    color: $white;
+    background-color: $primary-hover;
+  }
+}

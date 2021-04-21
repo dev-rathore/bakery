@@ -1,0 +1,23 @@
+
+.header-section{
+  padding: 8% 9% 8%;
+}
+
+.bg-nav{
+  background-color: $secondary;
+}
+
+.card-animate{
+  box-shadow: 1px 1px 10px #F7D6E2;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.card-animate:hover{
+  transform: scale(1.025);
+}
+
+@media screen and (max-width:768px){
+  .header-section{
+    padding: 6rem 9% 8%;
+  }  
+}

@@ -1,0 +1,20 @@
+// @import '~noty/src/noty.scss';
+// @import '~noty/src/themes/mint.scss';
+
+@import "./abstracts/variables";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/icons";
+@import "./components/buttons";
+
+
+@import "./sections/layout";
+
+// Home
+@import "./sections/home";
+
+@import "./sections/cart";
+
+@import "./sections/adminorder";
+
+@import "./sections/order";

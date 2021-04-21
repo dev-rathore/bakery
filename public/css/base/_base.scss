@@ -1,0 +1,35 @@
+// Base Code | Common for all
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $paragraph-ff;
+}
+
+// @media screen and (max-width:768px){
+  
+// }
+
+.bg-black{
+  background-color: $black;
+}
+.bg-gray{
+  background-color: $gray;
+}
+
+.white{
+  color: $white;
+}
+
+.heading{
+  font-family: $heading-ff;
+  font-weight: 500;
+}
+
+.sub-heading{
+  font-weight: 300;
+}

@@ -1,0 +1,47 @@
+<!-- navbar ended here -->
+<section class="header-section">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-sm-12 col-md-6">
+          <h1 class="fs-2 sub-heading"><em> Are You Feeling Hungry?</em></h1>
+          <h1 class="fs-1 heading">Our fresh made breads and pastries are ready to delight you</h1>
+          <button class="btn my-btn rounded-pill">Order Now</button>
+        </div>
+        <img class="my-4 col-sm-12 col-md-6" src="/images/hero-cake.jpg" alt="Cake">
+      </div>  
+    </div>
+
+  </section>
+  <!-- hero (header) section ended -->
+
+  <section class="cakes-section">
+    <h1 class="px-5">All Cakes</h1>
+  <div class="container">
+    <div class="row justify-content-around py-4">
+      <%/* pizzas.forEach(function(pizza){ */%>
+      <!-- we send pizzas list from homeCon.js thats why we are able to access -->
+      <div class="card card-animate border-0 p-0 col-8 col-sm-5 col-md-3 mx-4 my-3">
+        <img class="card-img-top" 
+        src="../images/<%/* =pizza.image */%>/cake.jpg" 
+        alt="cake">
+        <div class="card-body">
+          <h2 class="card-title"><%=/* pizza.name */%>Cake</h2>
+          <span class="center"><%/*= pizza.size */%>24 size</span>
+          <p class="card-text">Some details about the cake. Ingredients it contains, etc.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class=""><%/* = pizza.price */%>10 $</span>
+            <button id="addToCart" data-pizza="<%/*= JSON.stringify(pizza) */%>" class="btn my-btn rounded-pill">
+              <!-- this add btn is having a eventlistner so every time we click it something will hapen -->
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <%/*  }) */%>
+    
+      <!-- first card design ends here -->
+     
+    </div>
+  </div>  
+</section>
