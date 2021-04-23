@@ -1,65 +1,52 @@
 <section class="orders light-section">
-    <div class="container mx-auto">
-        <h1 class="mb-4">All Orders</h1>
-
-        <div class="overflow-auto pt-4">
-            <table class="table table-bordered border table-hover">
-                <thead class="bg-gray white align-middle">
-                    <tr>
-                        <th class="px-4 py-2 fs-5 fw-normal">Pizza ID</th>
-                        <th class="px-4 py-2 fs-5 fw-normal">name</th>
-                        <th class="px-4 py-2 fs-5 fw-normal">Price</th>
-                        <th class="px-4 py-2 fs-5 fw-normal">Size</th>
-                        <th class="px-4 py-2 fs-5 fw-normal">Delete</th>
-                        <th class="px-4 py-2 fs-5 fw-normal">Update</th>
-                    </tr>
-                </thead>
-                <tbody class="align-middle">
-                    <tbody>
-                        <%/* pizzas.forEach((pizza) => { */%>
-                        <tr>
-                            <td class="px-4 py-2">
-                               <%=/* pizza._id */%>4
-                            </td>
-                            <td class="px-4 py-2">
-                                <%=/* pizza.name */%>3
-                            </td>
-                            <td class="px-4 py-2">
-                                <%=/* pizza.price */%>5
-                            </td>
-                            <td class="px-4 py-2">
-                                <%=/* pizza.size */%>2
-                            </td>
-                            <td class="px-4 py-2">
-    
-                            <button data-pizza="<%=/* JSON.stringify(pizza) */%>" class="py-1 px-6 rounded-full flex items-center font-bold" >
-                                <!-- this add btn is having a eventlistner so every time we click it something will hapen -->
-                                   <span>-</span>
-                 <a href="/deletecake/<%=/* pizza._id */%>" class="btn btn-danger">Delete
-    
-                                   <span class="ml-4 ">Delete Pizza</span>
-               
-                               </button>
-                               </td>
-    
-                               <td class="border px-4 py-2">
-    
-                                <button data-pizza="<%=/* JSON.stringify(pizza) */%>" class="update-btn py-1 px-6 rounded-full flex items-center font-bold" >
-                                    <!-- this add btn is having a eventlistner so every time we click it something will hapen -->
-                                                                <span>*</span>
-                 <a href="/updatecake/<%=/* pizza._id */%>">update
-                <span class="ml-4 ">Update Pizza</span>
-                                    </a>
-    
-                                   </button>
-                                   </td>
-        
-                        </tr>
-                        <%/* }) */%>
-                        
-                </tbody>
-            </table>
-        </div>
-        
+    <div class="container">
+      <h1 class="mb-4">All Orders</h1>
+      <div class="overflow-auto pt-4">
+          <table class="table table-bordered border table-hover">
+            <thead class="bg-black white align-middle">
+                <tr>
+                <th class="table-data-width px-4 py-2 fs-5 fw-normal">Pizza ID</th>
+                <th class="table-data-width px-4 py-2 fs-5 fw-normal">name</th>
+                <th class="px-4 py-2 fs-5 fw-normal">Price</th>
+                <th class="px-4 py-2 fs-5 fw-normal">Size</th>
+                <th class="table-data-width px-4 py-2 fs-5 fw-normal">Delete</th>
+                <th class="table-data-width px-4 py-2 fs-5 fw-normal">Update</th>
+                </tr>
+            </thead>
+            <tbody class="align-middle">
+            <%/* pizzas.forEach((pizza) => { */%>
+                <tr>
+                <td class="px-4 py-2">
+                    <%=/* pizza._id */%>
+                </td>
+                <td class="px-4 py-2">
+                    <%=/* pizza.name */%>
+                </td>
+                <td class="px-4 py-2">
+                    <%=/* pizza.price */%>
+                </td>
+                <td class="px-4 py-2">
+                    <%=/* pizza.size */%>
+                </td>
+                <td class="px-4 py-2">
+                    <button data-pizza="<%=/* JSON.stringify(pizza) */%>" 
+                    class="btn btn-primary py-2 px-4 rounded-pill" >
+                    <!-- this add btn is having a eventlistner so every time we click it something will hapen -->
+                    <a href="/deletecake/<%=/* pizza._id */%>"
+                    class="text-light text-decoration-none">Delete Cake</a>
+                    </button>
+                </td>
+                <td class="border px-4 py-2">
+                    <button data-pizza="<%=/* JSON.stringify(pizza) */%>"    
+                    class="btn btn-primary py-2 px-4 rounded-pill" >
+                    <!-- this add btn is having a eventlistner so every time we click it something will hapen -->
+                    <a href="/updatecake/<%=/* pizza._id */%>" class="text-light text-decoration-none">Update</a>
+                    </button>
+                </td>
+                </tr>
+            <%/* }) */%>        
+            </tbody>
+          </table>
+        </div>  
     </div>
 </section>

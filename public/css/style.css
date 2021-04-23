@@ -41,6 +41,10 @@ body {
   padding: 15% 10%;
 }
 
+.table-data-width {
+  min-width: 230px;
+}
+
 .icon {
   color: white;
 }
@@ -110,8 +114,9 @@ body {
   height: 60px;
   background-color: #F14483;
   border-radius: 50%;
-  -webkit-box-shadow: 1px 1px 10px #F7D6E2;
-          box-shadow: 1px 1px 10px #F7D6E2;
+  -webkit-box-shadow: 3px 3px 15px #F7D6E2;
+          box-shadow: 3px 3px 15px #F7D6E2;
+  z-index: 1000;
 }
 
 .header-section {
@@ -153,22 +158,6 @@ body {
 
 .orders {
   padding: 4rem 1rem;
-}
-
-.col-1 {
-  min-width: 250px;
-}
-
-.col-2 {
-  min-width: 200px;
-}
-
-.col-3 {
-  min-width: 250px;
-}
-
-.col-5 {
-  min-width: 150px;
 }
 
 section.status {

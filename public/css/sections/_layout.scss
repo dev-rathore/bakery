@@ -31,5 +31,6 @@
   height: 60px;
   background-color: $secondary;
   border-radius: 50%;
-  box-shadow: 1px 1px 10px #F7D6E2;
+  box-shadow: 3px 3px 15px #F7D6E2;
+  z-index: 1000;
 }
