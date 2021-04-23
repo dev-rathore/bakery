@@ -57,17 +57,18 @@
                   </li>
                 <%/* }*/%>
               
-              <!-- Cart -->
-              <li class="nav-item">
-                <a href="/cart" class="nav-link text-center btn position-relative">
-                  <i class="icon fas fa-shopping-cart"></i>
-                  <span id="cartCounter" class="position-absolute top-30 start-60 badge rounded-2 p-1"><%/*= session.cart? session.cart.totalQty :' '*/%>0</span>
-                </a>
-              </li>
             </ul>  
           </div>
         </div>
       </nav>
+
+      <!-- Cart -->
+      <div class="cart-logo d-flex align-items-center">
+        <a href="/cart" class="nav-link text-center btn position-relative">
+          <i class="icon fas fa-shopping-cart"></i>
+          <span id="cartCounter" class="position-absolute top-30 start-60 badge rounded-2 p-1"><%/*= session.cart? session.cart.totalQty :' '*/%>1</span>
+        </a>
+      </div>
     <%/*- body */%>
 
     <!-- <script src="/socket.io/socket.io.js"></script>  -->
@@ -75,6 +76,11 @@
     <%- include("../partials/adminorder")-%>
     <%- include("../partials/order")-%>
     <%- include("../partials/cart")-%>
+
+    <%- include("../partials/addMenu")-%>
+    <%- include("../partials/updateCake")-%>
+    <%- include("../partials/menu")-%>
+    <%- include("../partials/admin")-%>
 
     <!-- <script src="../public/app.js"></script>     -->
 

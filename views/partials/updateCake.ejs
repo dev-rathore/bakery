@@ -1,0 +1,57 @@
+<section class="register d-flex justify-content-center py-5 px-2">
+    <div>
+        <form action='/updatecake' method="POST" class="mb-4 form-padding">
+          <%/* if(messages.error) { */%>
+            <span class="red"><%=/* messages.error */%></span>
+            <%/* } */%>
+    <input type="hidden" name="_id" value="<%=/* cake._id */%>">
+
+          <div class="mb-4">
+            <label class="mb-2" for="name">
+              Name of Cake</label>
+            <input name="name" value="<%=/* cake.name */%>" 
+            class="w-100 shadow border rounded py-2 px-3" 
+            id="name" type="text" placeholder="Enter Cake Name"
+            autocomplete="off">
+          </div>
+           
+          <div class="mb-4">
+            <label class="mb-2" for="price">
+              Price</label>
+            <input name="price" value="<%=/* cake.price */%>" 
+            class="w-100 shadow border rounded py-2 px-3" 
+            id="price" type="text" placeholder="Enter Price"
+            autocomplete="off">
+          </div>
+
+          <div class="mb-4">
+            <label class="mb-2" for="image">
+              Image</label>
+            <input name="image" value="<%=/* cake.image */%>" 
+            class="w-100 shadow border rounded py-2 px-3" 
+            id="image" type="text" placeholder="Enter Image Name"
+            autocomplete="off">
+          </div>
+
+          <div class="mb-4">
+            <label class="mb-2" for="size">
+              Size</label>
+            <input name="size" value="<%=/* cake.size */%>" 
+            class="w-100 shadow border rounded py-2 px-3" 
+            id="size" type="text" placeholder="Enter Size"
+            autocomplete="off">
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between">
+            <button class="btn btn-primary rounded-pill py-2 px-4" type="submit">
+              Update Cake</button>
+            <a href="/menu">
+              See Menu</a>
+          </div>
+        </form>
+        <p class="text-center">
+          &copy;2020 harsh  Al l rights reserved.
+        </p>
+      </div>
+      
+</section>

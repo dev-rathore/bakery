@@ -33,6 +33,14 @@ body {
   font-weight: 300;
 }
 
+.red {
+  color: #DA2E2B;
+}
+
+.form-padding {
+  padding: 15% 10%;
+}
+
 .icon {
   color: white;
 }
@@ -92,6 +100,18 @@ body {
     -webkit-transform: rotate(30deg);
             transform: rotate(30deg);
   }
+}
+
+.cart-logo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: #F14483;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 10px #F7D6E2;
+          box-shadow: 1px 1px 10px #F7D6E2;
 }
 
 .header-section {
